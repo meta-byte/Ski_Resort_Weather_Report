@@ -1,0 +1,19 @@
+/* sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  /* header text */
+  #shouldISki {
+      margin-top: 150px;
+  }
+
+  #resortInput {
+      width: 200px;
+  }
