@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container">
-            <h1 id="shouldISki" class="center">Should I go skiing today?</h1>
+            <h2 id="shouldISki" class="center white-text">Should I go skiing today?</h2>
         </div>
     </header>
 
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col m3">
                     <div class="card blue-grey">
-                        <div class="card-content white-text">
+                        <div class="card-content white-text center">
                             <span class="card-title">24 hr</span>
                             <h3 id="24hrSnow">10"</h3>
                         </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col m3">
                     <div class="card blue-grey">
-                        <div class="card-content white-text">
+                        <div class="card-content white-text center">
                             <span class="card-title">48 hr</span>
                             <h3 id="48hrSnow">22"</h3>
                         </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col m3">
                     <div class="card blue-grey">
-                        <div class="card-content white-text">
+                        <div class="card-content white-text center">
                             <span class="card-title">temp</span>
                             <h3 id="temp">22°</h3>
                         </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col m3">
                     <div class="card blue-grey">
-                        <div class="card-content white-text">
+                        <div class="card-content white-text center">
                             <span class="card-title">conditions</span>
 
                             <img id="weatherIcon" src="./assets/images/icon.png" alt="">
@@ -65,13 +65,20 @@
     <footer>
         <div class="container center">
             <div class="row">
-                <h5>Where do you want to ski?</h5>
+                <h5 class="white-text">Where do you want to ski?</h5>
             </div>
             <div class="row">
-                <input id="resortInput" class="center" type="text" placeholder="resort">
+
+                <div class="input-field">
+                    <select class="browser-default">
+                        <option value="" disabled selected>Choose your resort</option>
+                        <option value="Zermatt">Zermatt</option>
+                    </select>
+                </div>
+
             </div>
             <div class="row">
-                <a id="searchButton" class="waves-effect waves-light btn-large">search</a>
+                <a id="searchButton" class="waves-effect waves-light btn-large blue-grey">Should I ski?</a>
             </div>
         </div>
     </footer>
