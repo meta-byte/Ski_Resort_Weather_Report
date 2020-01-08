@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     background-image: url("../images/snowy-mountain-peak-418626.jpg");
     background-size: cover;
+    
   }
 
   main {
@@ -28,6 +29,11 @@ body {
 
   #searchButton {
     border-radius: 10px;
+  }
+
+  footer {
+    margin: auto;
+    width: 500px;
   }
 
   input {
