@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container">
-            <h1 id="shouldISki" class="center">Should I go skiing today?</h1>
+            <h2 id="shouldISki" class="center white-text">Should I go skiing today?</h2>
         </div>
     </header>
 
@@ -30,7 +30,7 @@
                             <div class="card center blue-grey">
                                 <div class="card-content white-text">
                                     <span class="card-title">data</span>
-                                    <h3 id="24hrSnow">10"</h3>
+                                    <h3 id="data1">1</h3>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                             <div class="card center blue-grey">
                                 <div class="card-content white-text">
                                     <span class="card-title">data</span>
-                                    <h3 id="48hrSnow">22"</h3>
+                                    <h3 id="data2">2</h3>
                                 </div>
                             </div>
                         </div>
@@ -46,12 +46,20 @@
                             <div class="card center blue-grey">
                                 <div class="card-content white-text">
                                     <span class="card-title">data</span>
-                                    <h3 id="snowData">22"</h3>
+                                    <h3 id="data3">3</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col sm12 m4">
+                            <div class="card blue-grey">
+                                <div class="card-content center white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data4">4</h3>
+                                </div>
+                            </div>
+                        </div>                        
                         <div class="col sm12 m4">
                             <div class="card blue-grey">
                                 <div class="card-content center white-text">
@@ -64,20 +72,10 @@
                             <div class="card blue-grey">
                                 <div class="card-content center white-text">
                                     <span class="card-title">icon</span>
-
-                                    <img id="weatherIcon" src="./assets/images/icon.png" alt="">
-
+                                    <img id="weatherIcon" src="./assets/images/icon.png" alt="temporaryIcon>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col sm12 m4">
-                            <div class="card blue-grey">
-                                <div class="card-content center white-text">
-                                    <span class="card-title">data</span>
-                                    <h3 id="temp">22°</h3>
-                                </div>
-                            </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col sm12 m4">
@@ -99,13 +97,20 @@
     <footer>
         <div class="container center">
             <div class="row">
-                <h5>Where do you want to ski?</h5>
+                <h5 class="white-text">Where do you want to ski?</h5>
             </div>
             <div class="row">
-                <input id="resortInput" class="center" type="text" placeholder="resort">
+
+                <div class="input-field">
+                    <select class="browser-default">
+                        <option value="" disabled selected>Choose your resort</option>
+                        <option value="Zermatt">Zermatt</option>
+                    </select>
+                </div>
+
             </div>
             <div class="row">
-                <a id="searchButton" class="waves-effect waves-light btn-large">search</a>
+                <a id="searchButton" class="waves-effect waves-light btn-large blue-grey">Should I ski?</a>
             </div>
         </div>
     </footer>
@@ -119,6 +124,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script src="assets/javascript/script.js"></script>
+
 
 
 </body>

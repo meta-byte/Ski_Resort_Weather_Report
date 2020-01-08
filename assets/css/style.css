@@ -3,6 +3,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url("../images/snowy-mountain-peak-418626.jpg");
+    background-size: cover;    
   }
 
   main {
@@ -11,11 +13,29 @@ body {
 
   /* header text */
   #shouldISki {
-      margin-top: 150px;
+      margin-top: 125px;
   }
 
   #resortInput {
       width: 200px;
   }
 
-  
+  .card {
+    height: 200px;
+    opacity: .8;
+    border-radius: 10px;
+  }
+
+  #searchButton {
+    border-radius: 10px;
+  }
+
+  footer {
+    margin: auto;
+    width: 500px;
+  }
+
+  input {
+    opacity: .8;
+  }
+
