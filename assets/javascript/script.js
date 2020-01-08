@@ -44,6 +44,8 @@ $(document).ready(function () {
     console.log("Executed")
 })
 
+
+
 // TASKS FOR MVP (MINIMUM VIABLE PRODUCT):
 // function for getting the input from the search box and making API call
 // On click that triggers the API search function
