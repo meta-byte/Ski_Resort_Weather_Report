@@ -4,8 +4,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-image: url("../images/snowy-mountain-peak-418626.jpg");
-    background-size: cover;
-    
+    background-size: cover;    
   }
 
   main {
@@ -39,3 +38,4 @@ body {
   input {
     opacity: .8;
   }
+
