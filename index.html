@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
 
@@ -24,38 +25,88 @@
     <main>
         <div id="snowReport" class="container">
             <div class="row">
-                <div class="col m3">
-                    <div class="card blue-grey">
-                        <div class="card-content white-text center">
-                            <span class="card-title">24 hr</span>
-                            <h3 id="24hrSnow">10"</h3>
+                <div class="col s12 xl8">
+                    <div class="row">
+                        <div class="col s6 l3">
+                            <div class="card center cyan darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data1">1</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card center cyan darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data2">2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card center cyan darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data3">3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card center cyan darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title flow-text">data</span>
+                                    <h3 id="data4">4</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6 l3">
+                            <div class="card cyan darken-1">
+                                <div class="card-content center white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data5">5</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card cyan darken-1">
+                                <div class="card-content center white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data6">6</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card cyan darken-1">
+                                <div class="card-content center white-text">
+                                    <span class="card-title">data</span>
+                                    <h3 id="data7">7</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card cyan darken-1">
+                                <div class="card-content center white-text">
+                                    <span class="card-title">icon</span>
+                                    <img id="weatherIcon" src="./assets/images/icon.png" alt="temporaryIcon">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col m3">
-                    <div class="card blue-grey">
-                        <div class="card-content white-text center">
-                            <span class="card-title">48 hr</span>
-                            <h3 id="48hrSnow">22"</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col m3">
-                    <div class="card blue-grey">
-                        <div class="card-content white-text center">
-                            <span class="card-title">temp</span>
-                            <h3 id="temp">22°</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col m3">
-                    <div class="card blue-grey">
-                        <div class="card-content white-text center">
-                            <span class="card-title">conditions</span>
-
-                            <img id="weatherIcon" src="./assets/images/icon.png" alt="">
-
-                        </div>
+                <div class="col s12 xl4">
+                    <div class="row">
+                        <blockquote class="twitter-tweet">
+                            <p lang="en" dir="ltr">Monday&#39;s can be like ☀️😃 <a
+                                    href="https://twitter.com/hashtag/Zermatt?src=hash&amp;ref_src=twsrc%5Etfw">#Zermatt</a>
+                                <a
+                                    href="https://twitter.com/hashtag/Matterhorn?src=hash&amp;ref_src=twsrc%5Etfw">#Matterhorn</a>
+                                <a href="https://t.co/ednxiZEKTC">pic.twitter.com/ednxiZEKTC</a></p>&mdash; Zermatt -
+                            Matterhorn (@zermatt_tourism) <a
+                                href="https://twitter.com/zermatt_tourism/status/1214217995951726599?ref_src=twsrc%5Etfw">January
+                                6, 2020</a>
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -78,7 +129,7 @@
 
             </div>
             <div class="row">
-                <a id="searchButton" class="waves-effect waves-light btn-large blue-grey">Should I ski?</a>
+                <a id="searchButton" class="waves-effect waves-light btn-large cyan darken-1">Should I ski?</a>
             </div>
         </div>
     </footer>
@@ -91,7 +142,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
     <script src="assets/javascript/script.js"></script>
+
 
 
 </body>

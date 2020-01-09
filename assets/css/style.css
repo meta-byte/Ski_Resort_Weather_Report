@@ -3,9 +3,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url("../images/snowy-mountain-peak-418626.jpg");
-    background-size: cover;
-    
+    background-image: url("../images/snowy-mountain-peak-418626_dark.png");
+    background-size: cover; 
+      
   }
 
   main {
@@ -15,16 +15,22 @@ body {
   /* header text */
   #shouldISki {
       margin-top: 125px;
+      margin-bottom: 75px;
+      font-family: 'Lobster', cursive;
   }
 
   #resortInput {
       width: 200px;
   }
 
-  .card {
-    height: 200px;
+   .card {
+    height: 150px;
     opacity: .8;
     border-radius: 10px;
+  }
+
+  .twitter-tweet {
+    margin: auto;
   }
 
   #searchButton {
@@ -39,3 +45,4 @@ body {
   input {
     opacity: .8;
   }
+
