@@ -50,6 +50,9 @@ $(document).ready(function () {
 
         forecast = response.forecast[4]
         $("#data5").text(forecast.base.wx_desc)
+        $("#data6").text(forecast.base.temp_f)
+        $("#data7").text(forecast.base.windspd_mph)
+        $("#weatherIcon").attr("src", "assets/images/PNG/" + forecast.base.wx_icon.replace(".gif", ".png"));
         $("#data6").text(forecast.base.temp_f + " °F")
         $("#data7").text(forecast.base.windspd_mph + " mph")
 
