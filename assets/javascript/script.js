@@ -42,11 +42,6 @@ $(document).ready(function () {
 
     function updateforecastCards(response) {
 
-        // for (i = 0; i < response.forecast.length; i++) {
-        //     if () {
-        //         console.log()
-        //     }
-        // }
 
         forecast = response.forecast[4]
         $("#data5").text(forecast.base.wx_desc)
@@ -69,6 +64,7 @@ $(document).ready(function () {
 
     $("#searchButton").on("click", function () {
         checkReports();
+        $(".hide").attr("class", "")
         $("#shouldISki").animate({ fontSize: "30px" });
         $("#shouldISki").animate({ marginTop: "-=120px" });
 
