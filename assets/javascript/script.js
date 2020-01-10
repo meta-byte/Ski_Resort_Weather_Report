@@ -52,7 +52,9 @@ $(document).ready(function () {
         $("#data5").text(forecast.base.wx_desc)
         $("#data6").text(forecast.base.temp_f)
         $("#data7").text(forecast.base.windspd_mph)
-        $("#data8").text(forecast.base.wx_icon)
+        $("#weatherIcon").attr("src", "assets/images/PNG/" + forecast.base.wx_icon.replace(".gif", ".png"))
+        console.log(forecast.base.wx_icon.replace(".gif", ".png"));
+        $("#weatherIcon").attr("style", "height: 75px")
 
     }
 
