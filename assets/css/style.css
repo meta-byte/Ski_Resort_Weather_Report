@@ -50,3 +50,7 @@ body {
     opacity: .8;
   }
 
+  
+  #weatherIcon {
+    height: 75px;
+  }
