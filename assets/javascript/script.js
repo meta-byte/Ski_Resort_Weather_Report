@@ -66,10 +66,12 @@ $(document).ready(function () {
 
 
     $("#searchButton").on("click", function () {
-        checkReports()
-    })
+        checkReports();
+        $("#shouldISki").animate({ fontSize: "30px" });
+        $("#shouldISki").animate({ marginTop: "-=120px" });
 
 
-    console.log("Executed")
+        console.log("Executed")
+    });
+
 })
-
