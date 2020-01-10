@@ -52,17 +52,17 @@ $(document).ready(function () {
         $("#data5").text(forecast.base.wx_desc)
         $("#data6").text(forecast.base.temp_f)
         $("#data7").text(forecast.base.windspd_mph)
-        $("#weatherIcon").attr("src", "assets/images/PNG/" + forecast.base.wx_icon.replace(".gif", ".png"))
-        console.log(forecast.base.wx_icon.replace(".gif", ".png"));
-        $("#weatherIcon").attr("style", "height: 75px")
+        $("#weatherIcon").attr("src", "assets/images/PNG/" + forecast.base.wx_icon.replace(".gif", ".png"));
+        $("#data6").text(forecast.base.temp_f + " °F")
+        $("#data7").text(forecast.base.windspd_mph + " mph")
 
     }
 
     function updatesnowCards(response) {
-        $("#data1").text(response.lastsnow)
-        $("#data2").text(response.lowersnow_in)
-        $("#data3").text(response.uppersnow_in)
-        $("#data4").text(response.conditions)
+        $("#data2").text(response.lastsnow_in + " in")
+        $("#data3").text(response.lowersnow_in + " in")
+        $("#data4").text(response.uppersnow_in + " in")
+        $("#data1").text(response.conditions)
 
     }
 
