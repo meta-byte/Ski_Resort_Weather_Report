@@ -56,9 +56,9 @@ $(document).ready(function () {
     }
 
     function updatesnowCards(response) {
-        $("#data2").text(response.lastsnow_in)
-        $("#data3").text(response.lowersnow_in)
-        $("#data4").text(response.uppersnow_in)
+        $("#data2").text(response.lastsnow_in + " in")
+        $("#data3").text(response.lowersnow_in + " in")
+        $("#data4").text(response.uppersnow_in + " in")
         $("#data1").text(response.conditions)
 
     }
