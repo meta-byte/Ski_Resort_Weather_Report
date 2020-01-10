@@ -27,6 +27,7 @@ body {
     height: 150px;
     opacity: .8;
     border-radius: 10px;
+    /* min-width: 150px; */
   }
 
   h3 {
@@ -50,7 +51,14 @@ body {
     opacity: .8;
   }
 
-  
+  .iconCard {
+    padding: 0px !important;
+  }
   #weatherIcon {
-    height: 75px;
+    height: 100px;
+    margin-top: 25px;
+  }
+
+  .hide {
+    display: none;
   }

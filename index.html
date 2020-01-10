@@ -22,7 +22,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="hide">
         <div id="snowReport" class="container">
             <div class="row">
                 <div class="col s12 xl8">
@@ -71,8 +71,16 @@
                         </div>
                         <div class="col s6 l3">
                             <div class="card cyan darken-1">
+                                <div class="card-content center white-text iconCard">
+                                    <span class="card-title"></span>
+                                    <img id="weatherIcon" src="" alt="temporaryIcon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l3">
+                            <div class="card cyan darken-1">
                                 <div class="card-content center white-text">
-                                    <span class="card-title">Temperature</span>
+                                    <span class="card-title">Temp</span>
                                     <h3 id="data6">6</h3>
                                 </div>
                             </div>
@@ -82,14 +90,6 @@
                                 <div class="card-content center white-text">
                                     <span class="card-title">Wind</span>
                                     <h3 id="data7">7</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 l3">
-                            <div class="card cyan darken-1">
-                                <div class="card-content center white-text">
-                                    <span class="card-title">icon</span>
-                                    <img id="weatherIcon" src="" alt="temporaryIcon">
                                 </div>
                             </div>
                         </div>
