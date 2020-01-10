@@ -12,7 +12,7 @@ body {
     flex: 1 0 auto;
   }
 
-  /* header text */
+  /* header text */ 
   #shouldISki {
       margin-top: 125px;
       margin-bottom: 75px;
@@ -27,6 +27,10 @@ body {
     height: 150px;
     opacity: .8;
     border-radius: 10px;
+  }
+
+  h3 {
+    font-size: min(max(16px, 4vw), 22px);
   }
 
   .twitter-tweet {
