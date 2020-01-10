@@ -10,6 +10,7 @@ body {
 
   main {
     flex: 1 0 auto;
+        
   }
 
   /* header text */ 
@@ -23,15 +24,37 @@ body {
       width: 200px;
   }
 
+  #snowReport {
+    max-width: 700px;
+    margin: auto;
+  }
+
    .card {
-    height: 150px;
+    height: 150px;    
     opacity: .8;
     border-radius: 10px;
+    padding-top: 0px;
     /* min-width: 150px; */
+  }
+
+  .card-content {
+    padding-top: 0px;
+  }
+
+  span {
+    margin-top: 0px;
+    /* font-size: 40px; */
   }
 
   h3 {
     font-size: min(max(16px, 4vw), 22px);
+    vertical-align: middle;
+  }
+
+  .card-title {
+    border-bottom:  solid 1px;
+    padding-bottom: 5px;
+    font-size: 18px !important;
   }
 
   .twitter-tweet {
@@ -52,7 +75,7 @@ body {
   }
 
   .iconCard {
-    padding: 0px !important;
+    padding-top: 0px !important;
   }
   #weatherIcon {
     height: 100px;
