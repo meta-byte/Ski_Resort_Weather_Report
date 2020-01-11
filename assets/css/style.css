@@ -60,6 +60,10 @@ body {
     margin: auto;
   }
 
+  #dropdown {
+    width: 300px;
+  }
+
   #searchButton {
     border-radius: 10px;
   }

@@ -93,7 +93,6 @@ function updateforecastCards(response) {
 
 function updatesnowCards(response) {
     $("#data2").text(response.lastsnow.substring(0, 5))
-    $("#lastSnow").text(response.lastsnow_in + " in")
     $("#data3").text(response.lowersnow_in + " in")
     $("#data4").text(response.uppersnow_in + " in")
     $("#data1").text(response.conditions)
