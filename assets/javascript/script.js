@@ -3,22 +3,24 @@ var resorts = [
         Resort: "Zermatt",
         ID: 13026,
         twitterURL: "https://twitter.com/zermatt_tourism"
+        lat: 46.0207,
+        lng: 7.7491,
     }
 ]
+
 function twitterMap(resort) {
     var feed = $("<a>")
     $(feed).addClass("twitter-timeline")
     $(feed).attr("id", "timeline")
     $(feed).attr("href", resort.twitterURL)
-
     $("#twitter").append(feed)
 
-    // <a class="twitter-timeline" id="timeline" href="">
-    // </a>
     console.log(resort.twitterURL)
     console.log(feed)
+  
     $.getScript("https://platform.twitter.com/widgets.js")
 }
+
 function checkReports() {
     var search = ""
     var selected = $(".browser-default :selected").val()
@@ -28,8 +30,6 @@ function checkReports() {
             search = resorts[i].ID
             console.log(resorts[i].ID)
             twitterMap(resorts[i])
-        }
-    }
 
     var forecastURL = "https://api.weatherunlocked.com/api/resortforecast/" + search + "?app_id=6461851d&app_key=4c6ecb1f135f755162b13545e275e1ff"
     var snowURL = "https://api.weatherunlocked.com/api/snowreport/" + search + "?app_id=6461851d&app_key=4c6ecb1f135f755162b13545e275e1ff"
@@ -73,21 +73,35 @@ function updatesnowCards(response) {
 }
 
 
+
 $(document).ready(function () {
 
     $("#searchButton").on("click", function () {
         checkReports();
         $(".hide").attr("class", "")
+
+    $("#searchButton").one("click", function () {
         $("#shouldISki").animate({ fontSize: "30px" });
         $("#shouldISki").animate({ marginTop: "-=120px" });
+    })
 
 
-        console.log("Executed")
+    $("#searchButton").on("click", function () {
+        checkReports();
+        $(".hide").attr("class", "");
+        console.log("Executed");
     });
+
+    // Initialize and add the map
+    function initMap() {
+        // The location of Zermatt
+        var Zermatt = { lat: 46.0207, lng: 7.7491 };
+        // The map, centered at Zermatt
+        var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 4, center: Zermatt });
+        // The marker, positioned at Zermatt
+        var marker = new google.maps.Marker({ position: Zermatt, map: map });
+    }
 
 })
 
-{/* <a class="twitter-timeline"
-  href="https://twitter.com/{screen_name}">
-Tweets by @{screen_name}
-</a> */}
