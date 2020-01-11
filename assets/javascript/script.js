@@ -61,15 +61,17 @@ $(document).ready(function () {
 
     }
 
+    $("#searchButton").one("click", function () {
+        $("#shouldISki").animate({ fontSize: "30px" });
+        $("#shouldISki").animate({ marginTop: "-=120px" });
+    })
+
+
 
     $("#searchButton").on("click", function () {
         checkReports();
-        $(".hide").attr("class", "")
-        $("#shouldISki").animate({ fontSize: "30px" });
-        $("#shouldISki").animate({ marginTop: "-=120px" });
-
-
-        console.log("Executed")
+        $(".hide").attr("class", "");
+        console.log("Executed");
     });
 
 })
