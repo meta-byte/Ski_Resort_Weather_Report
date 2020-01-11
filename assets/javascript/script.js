@@ -4,6 +4,8 @@ $(document).ready(function () {
         {
             Resort: "Zermatt",
             ID: 13026,
+            lat: 46.0207,
+            lng: 7.7491,
         }
     ]
 
@@ -74,4 +76,16 @@ $(document).ready(function () {
         console.log("Executed");
     });
 
+    // Initialize and add the map
+    function initMap() {
+        // The location of Zermatt
+        var Zermatt = { lat: 46.0207, lng: 7.7491 };
+        // The map, centered at Zermatt
+        var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 4, center: Zermatt });
+        // The marker, positioned at Zermatt
+        var marker = new google.maps.Marker({ position: Zermatt, map: map });
+    }
+
 })
+
