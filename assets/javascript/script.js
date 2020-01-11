@@ -73,7 +73,9 @@ function checkReports() {
     }).then(function (response) {
 
         console.log(response)
-        updatesnowCards(response)
+        updatesnowCards(response);
+        renderHeader(response);
+
     })
 
 }
@@ -97,6 +99,12 @@ function updatesnowCards(response) {
     $("#data1").text(response.conditions)
 
 }
+
+function renderHeader(response) {
+    $("#resortName").text(response.resortname);
+    $("#todaysDate").text(response.reportdate);
+}
+
 
 
 
