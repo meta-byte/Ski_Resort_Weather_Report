@@ -78,8 +78,24 @@ body {
     padding-top: 0px !important;
   }
   #weatherIcon {
-    height: 100px;
-    margin-top: 25px;
+    height: 75px;
+    margin-top: 0px;
+  }
+
+  #lastSnow{
+    margin-top: 0px;
+  }
+
+  #twitter{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 0px;
+
+  }
+
+  #data2{
+    margin-bottom: 8px;
   }
 
   .hide {
