@@ -36,7 +36,7 @@ This web application allows a user to search weather forecasts and snow conditio
 
 This site is hosted courtesy of github pages.
 
-To view the site please click [here]().
+To view the site please click [here](https://meta-byte.github.io/Ski_Resort_Weather_Report/).
 
 
 ## Contact Info
