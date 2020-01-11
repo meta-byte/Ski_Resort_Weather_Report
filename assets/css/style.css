@@ -4,13 +4,12 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-image: url("../images/snowy-mountain-peak-418626_dark.png");
-    background-size: cover;
-      
+    /* Photo by Tyler Lastovich from Pexels */
+    background-size: cover;      
   }
 
   main {
-    flex: 1 0 auto;
-        
+    flex: 1 0 auto;        
   }
 
   /* header text */ 
@@ -34,7 +33,7 @@ body {
     opacity: .8;
     border-radius: 10px;
     padding-top: 0px;
-    /* min-width: 150px; */
+    min-width: 150px;
   }
 
   .card-content {
@@ -90,8 +89,17 @@ body {
     height: 400px;
     overflow-x: hidden;
     overflow-y: scroll;
-    border-radius: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
 
+  #twitter::-webkit-scrollbar {
+    width: 10px;    
+  }
+
+  #twitter::-webkit-scrollbar-thumb {
+    background: #00acc1;
+    border-radius: 5px;
   }
 
   #data2{
@@ -106,4 +114,5 @@ body {
  #map {
    height: 400px;  /* The height is 400 pixels */
    width: 100%;  /* The width is the width of the web page */
+   border-radius: 10px    
   }
