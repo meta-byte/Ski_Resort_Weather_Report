@@ -30,6 +30,15 @@ function initMap() {
         document.getElementById('map'), { zoom: 4, center: Zermatt });
     // The marker, positioned at Zermatt
     var marker = new google.maps.Marker({ position: Zermatt, map: map });
+          
+    var settings = {
+            "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDWnarAnM5iU1S8bdpK_7FGu6ChEXMe7tY&callback=initMap",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+     $.ajax(settings).done(function (response) {
+            console.log(response);
 }
 
 function checkReports() {
@@ -109,8 +118,6 @@ $(document).ready(function () {
         $(".hide").attr("class", "");
         console.log("Executed");
     });
-
-
 
 })
 
