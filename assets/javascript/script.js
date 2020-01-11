@@ -3,12 +3,12 @@ var resorts = [
         Resort: "Zermatt",
         ID: 13026,
         twitterURL: "https://twitter.com/zermatt_tourism",
-        lat: 46.0207,
-        lng: 7.7491,
+        position: { lat: 46.0207, lng: 7.7491, },
+
     }
 ]
 
-function twitterMap(resort) {
+function twitter(resort) {
     var feed = $("<a>")
     $(feed).addClass("twitter-timeline")
     $(feed).attr("id", "timeline")
@@ -22,14 +22,14 @@ function twitterMap(resort) {
 }
 
 // Initialize and add the map
-function initMap() {
+function initMap(resort) {
     // The location of Zermatt
-    var Zermatt = { lat: 46.0207, lng: 7.7491 };
+    var location = resort.position;
     // The map, centered at Zermatt
     var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 4, center: Zermatt });
+        document.getElementById('map'), { zoom: 4, center: location });
     // The marker, positioned at Zermatt
-    var marker = new google.maps.Marker({ position: Zermatt, map: map });
+    var marker = new google.maps.Marker({ position: location, map: map });
 
     var settings = {
         "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDWnarAnM5iU1S8bdpK_7FGu6ChEXMe7tY&callback=initMap",
@@ -51,7 +51,8 @@ function checkReports() {
         if (resorts[i].Resort === selected) {
             search = resorts[i].ID
             console.log(resorts[i].ID)
-            twitterMap(resorts[i])
+            twitter(resorts[i])
+            initMap(resorts[i])
         }
     }
 
@@ -106,6 +107,7 @@ function renderHeader(response) {
 
 
 
+
 $(document).ready(function () {
 
     $("#searchButton").one("click", function () {
@@ -115,7 +117,6 @@ $(document).ready(function () {
 
     $("#searchButton").on("click", function () {
         checkReports();
-        initMap();
         $(".hide").attr("class", "");
         console.log("Executed");
     });
