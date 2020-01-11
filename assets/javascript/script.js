@@ -8,7 +8,7 @@ var resorts = [
     }
 ]
 
-function twitterMap(resort) {
+function twitter(resort) {
     var feed = $("<a>")
     $(feed).addClass("twitter-timeline")
     $(feed).attr("id", "timeline")
@@ -22,7 +22,7 @@ function twitterMap(resort) {
 }
 
 // Initialize and add the map
-function initMap() {
+function initMap(resort) {
     // The location of Zermatt
     var Zermatt = { lat: 46.0207, lng: 7.7491 };
     // The map, centered at Zermatt
@@ -51,7 +51,8 @@ function checkReports() {
         if (resorts[i].Resort === selected) {
             search = resorts[i].ID
             console.log(resorts[i].ID)
-            twitterMap(resorts[i])
+            twitter(resorts[i])
+            initMap(resorts[i])
         }
     }
 
