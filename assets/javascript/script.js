@@ -72,7 +72,9 @@ function checkReports() {
     }).then(function (response) {
 
         console.log(response)
-        updatesnowCards(response)
+        updatesnowCards(response);
+        renderHeader(response);
+
     })
 
 }
@@ -97,22 +99,19 @@ function updatesnowCards(response) {
 
 }
 
+function renderHeader(response) {
+    $("#resortName").text(response.resortname);
+    $("#todaysDate").text(response.reportdate);
+}
+
 
 
 $(document).ready(function () {
-
-    $("#searchButton").on("click", function () {
-        checkReports();
-        $(".hide").attr("class", "")
-    })
 
     $("#searchButton").one("click", function () {
         $("#shouldISki").animate({ fontSize: "30px" });
         $("#shouldISki").animate({ marginTop: "-=120px" });
     })
-
-
-
 
     $("#searchButton").on("click", function () {
         checkReports();
