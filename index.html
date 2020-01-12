@@ -18,15 +18,15 @@
 <body>
     <header>
         <div class="container">
-            <h2 id="shouldISki" class="center white-text">Should I go skiing today?</h2>
+            <h2 id="shouldISki" class="center-align white-text">Should I go skiing today?</h2>
         </div>
     </header>
 
     <main class="hide">
 
         <div id="resortHeader" class="container">
-            <h2 id="resortName" class="center white-text"></h2>
-            <h5 id="todaysDate" class="center white-text"></h5>
+            <h2 id="resortName" class="center-align white-text"></h2>
+            <h5 id="todaysDate" class="center-align white-text"></h5>
         </div>
 
         <div id="snowReport" class="container">
@@ -112,19 +112,17 @@
     </main>
 
     <footer>
-        <div id="dropdown" class="container center">
+        <div id="resortPicker" class="container center">
             <div class="row">
                 <h5 class="white-text">Where do you want to ski?</h5>
             </div>
-            <div class="row">
-
+            <div id="dropdown" class="row">
                 <div class="input-field center">
                     <select class="browser-default center">
                         <option value="" disabled selected>Choose your resort</option>
                         <option value="Zermatt">Zermatt</option>
                     </select>
                 </div>
-
             </div>
             <div class="row">
                 <a id="searchButton" class="waves-effect waves-light btn-large cyan darken-1">Should I ski?</a>
