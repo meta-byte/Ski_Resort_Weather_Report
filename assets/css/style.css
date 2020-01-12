@@ -5,11 +5,11 @@ body {
     flex-direction: column;
     background-image: url("../images/snowy-mountain-peak-418626_dark.png");
     /* Photo by Tyler Lastovich from Pexels */
-    background-size: cover;      
+    background-size: cover;          
   }
 
   main {
-    flex: 1 0 auto;        
+    flex: 1 0 auto;           
   }
 
   /* header text */ 
@@ -60,20 +60,22 @@ body {
     margin: auto;
   }
 
+  #resortPicker {
+    max-width: 700px;
+    margin: auto;
+  }
+
   #dropdown {
     width: 300px;
   }
+
+
 
   #searchButton {
     border-radius: 10px;
   }
 
-  footer {
-    margin: auto;
-    width: 500px;
-  }
-
-  input {
+   input {
     opacity: .8;
   }
 
