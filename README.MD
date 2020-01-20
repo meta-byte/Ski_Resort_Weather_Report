@@ -29,8 +29,6 @@ This web application allows a user to search weather forecasts and snow conditio
 * App presents dashboard info for a selected resort
 * decide if you should go skiing today
 
-## Known Bugs
-
 
 ## Hosted
 
@@ -40,4 +38,9 @@ To view the site please click [here](https://meta-byte.github.io/Ski_Resort_Weat
 
 
 ## Contact Info
+
+Contributors of the project: 
+[Bryce Johnson](https://github.com/aarkitekkt).
+[Taylor Paletta](https://github.com/taypal).
+[Garrett Howard](https://github.com/meta-byte).
 
